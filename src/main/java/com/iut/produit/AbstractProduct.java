@@ -5,18 +5,18 @@ abstract  class AbstractProduct {
     private String prName;
     private double prCost;
 
-    public AbstractProduct(String name, double cost) {
-        this.Prname = name;
-        this.Prcost = cost;
+    protected AbstractProduct(String name, double cost) {
+        this.prName = name;
+        this.prCost = cost;
     }
 
     public double getCost() {
-        return Prcost;
+        return prCost;
     }
 
     public double calculatePrice() {
         // Exception non gérée (division par zéro)
-        return Prcost / 0;
+        return prCost / 0;
     }
 
 }
