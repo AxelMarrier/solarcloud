@@ -2,8 +2,8 @@ package com.iut.produit;
 
 abstract  class AbstractProduct {
 
-    private String Prname;
-    private double Prcost;
+    private String prName;
+    private double prCost;
 
     public AbstractProduct(String name, double cost) {
         this.Prname = name;
